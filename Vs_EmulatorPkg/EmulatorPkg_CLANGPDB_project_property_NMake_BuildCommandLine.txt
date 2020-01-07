@@ -1,0 +1,5 @@
+cd /D C:\steven\edk2
+call edksetup.bat
+set CLANG_HOST_BIN=n
+set CLANG_BIN=C:\Program Files\LLVM\bin\
+build -p EmulatorPkg\EmulatorPkg.dsc -a X64 -DWIN_HOST_BUILD=TRUE -t CLANGPDB
